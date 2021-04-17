@@ -9,6 +9,7 @@ public interface OprecordDao {
 
     public List<Oprecord> findByAccountid(int accountid);
 
+
     public List<Oprecord> findAll();
 
 }

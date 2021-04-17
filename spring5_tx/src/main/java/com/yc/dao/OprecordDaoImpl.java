@@ -66,11 +66,13 @@ public class OprecordDaoImpl implements OprecordDao {
           Oprecord oprecord =new Oprecord();
            oprecord.setId(resultset.getInt("id"));
            oprecord.setAccountid(resultset.getInt("accountid"));
-           oprecord.setOpomoney(resultset.getDouble("opomoney"));
+           oprecord.setOpomoney(resultset.getDouble("opmoney"));
            oprecord.setOptime((Timestamp) resultset.getObject("optime"));
            oprecord.setTransferid(resultset.getString("transferid"));
            return oprecord;
        });
        return list;
     }
+
+
 }

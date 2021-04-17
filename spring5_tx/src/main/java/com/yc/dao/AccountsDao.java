@@ -13,5 +13,5 @@ public interface AccountsDao {
 
     public List<Accounts> findAll();
 
-    public Accounts findAccount(int accountsId);
+    public Accounts findAccount(int accountsid);
 }

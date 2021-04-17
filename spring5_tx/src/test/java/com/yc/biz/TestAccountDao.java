@@ -22,7 +22,7 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = AppConfig.class)
-public class TestDao {
+public class TestAccountDao {
     @Autowired
     private DataSource dataSource;
 
@@ -43,7 +43,7 @@ public class TestDao {
     }
 
     @Test
-    public void testopenaccounts(){
+    public void testOpenNewAccount(){
         Accounts a =new Accounts();
         a.setBalance(10d);
         int id = accountsDao.saveAccounts(a);
@@ -51,7 +51,7 @@ public class TestDao {
     }
 
     @Test
-    public void testfindallAccount(){
+    public void testfindAll(){
         List<Accounts> all = accountsDao.findAll();
         System.out.println(all);
     }
