@@ -23,7 +23,9 @@
 - 动态代理原则是代理类持有委托类对象 ，然后创建代理，再重写 invoke 方法来处理
 
 ##### 5.spring5_tx
--  Spring-tx模块负责在spring框架中实现事务管理功能。以aop切面的方式将事务注入到业务代码中,并实现不同类型的事务管理器
+- 这个demo是学习spring的事务管理，表account是账户表，oprecord是流水记录表，sql文件在resources下
+- Spring-tx模块负责在spring框架中实现事务管理功能。以aop切面的方式将事务注入到业务代码中,并实现不同类型的事务管理器
+- 为了实现事务管理需要引入 spring-jdbc 依赖
 ----------
 tips：
 
